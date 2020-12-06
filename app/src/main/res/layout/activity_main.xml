@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDaysOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Days Of Week"
+        app:layout_constraintBottom_toTopOf="@+id/btnHolidays"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/btnHolidays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Holidays"
+        app:layout_constraintBottom_toTopOf="@+id/btnMonths"
+        app:layout_constraintTop_toBottomOf="@+id/btnDaysOfWeek"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/btnMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHow months in  a year"
+        app:layout_constraintBottom_toTopOf="@+id/btnDaysinAMonth"
+        app:layout_constraintStart_toStartOf="@+id/btnHolidays"
+        app:layout_constraintTop_toBottomOf="@+id/btnHolidays" />
+
+    <Button
+        android:id="@+id/btnDaysinAMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Days In a Month"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnMonths"
+        app:layout_constraintTop_toBottomOf="@+id/btnMonths" />
+</androidx.constraintlayout.widget.ConstraintLayout>
